@@ -1,10 +1,8 @@
 import { useState } from 'react'
 
-import viteLogo from '/vite.svg'
+
 import Header from './components/Header'
-import MarkdownGuide from './components/MarkdownGuide'
 import InputContainer from './components/MarkdownInput';
-import { useEffect } from 'react';
 import MarkdownOutput from './components/MarkdownOutput';
 import { styled } from 'styled-components';
 
@@ -13,7 +11,7 @@ function App() {
   display: flex;
   width: 100%;
     `;
-  const [Show, setShow] = useState(false);
+
   const [markdown, setMarkdown] = useState(`# Hello World`);
 
   function handleOnChange(evt:any) {
